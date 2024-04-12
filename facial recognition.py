@@ -1,12 +1,12 @@
 import cv2
-from plyer import notification
-from pyfiglet import Figlet
+from plyer import notification # Access granted notification
+from pyfiglet import Figlet #Figlet was just a welcome page
 
 fig = Figlet(font='slant')
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-person = cv2.imread('your_face.jpg', cv2.IMREAD_GRAYSCALE)  
+person = cv2.imread('your_face.jpg', cv2.IMREAD_GRAYSCALE)  #Add your own picture
 
 cap = cv2.VideoCapture(0)
 
